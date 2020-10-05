@@ -1,0 +1,167 @@
+*{
+    font-family: 'Righteous', sans-serif;
+    box-sizing: border-box !important;
+}
+
+/* To Give the toggler icon a white color */
+.navbar-toggler-icon{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 255, 255, 255.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* navigation bar with gradient background*/
+.navbar{
+  background: rgb(0,212,255) !important;
+  background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 100%) !important;
+}
+.nav-link{
+  color:white !important;
+  width:100% !important;
+}
+.nav-item{
+  position:relative;
+}
+
+/* nav links hover effects using ::before*/
+.nav-item::before{
+  content: '';
+  position: absolute;
+  width:100%;
+  height:100%;
+  background-color: orange !important;
+  box-sizing: border-box !important;
+  z-index:-1;
+  clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+  transition: all 0.5s;
+}
+.nav-item:hover::before{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.container-fluid.first-one{
+  position: relative!important;
+  background-image: url('image/fgo_bg.jpg');
+  background-size: cover;
+  background-position:bottom;
+  background-repeat: no-repeat;
+}
+
+/* some adjustments for smaller scrrens using media query*/
+@media (max-width:767px) {
+  .col-md h1{
+    font-size:2rem !important; /*fix the font-size to 2.5 rem so that it doesnt become smaller with vw */
+  }
+  .content p{
+    font-size: 0.8rem !important; /* same thing as .col-md h1 */
+  }
+  .button1{
+    font-size: 0.8rem !important;/* same thing as .col-md h1 */
+  }
+  .col-md-7 h2{
+    font-size: 1.5rem !important;
+  }
+}
+
+.col-md.coloffirstrow h1{
+  color:white !important;
+  opacity:0.5;
+  font-size:3vw; /* font-size scale with viweport cuz at a certain point it overflows and half of it becomes invisible*/
+}
+
+.col-md.coloffirstrow{
+  overflow:hidden; /* so that the images doesnt show outside their containers */
+  position:relative;
+}
+
+/*some adjustments to the images used in .col.imgbox */
+.imgbox .img-fluid{
+transform: scale(2.3) translateY(30%);
+}
+
+.imgbox.c1 .img-fluid{
+  transform: scale(2.3) translateY(26%);
+}/* end of adjsutments */
+
+/* this part contains all the css necessary for the effects in the .container-fluid.row */
+.imgbox{
+  transition:all 0.8s;
+}
+.col-md:hover .imgbox{
+  transform: translateY(300%);
+}
+.col-md .content{
+  color:white;
+  text-align: justify;
+  word-wrap: break-word;
+  position: absolute;
+  width:100%;
+  top: 2000px;
+  left: 0;
+  transition: all 0.9s;
+  font-size: 1vw;
+
+}
+.col-md:hover .content{
+  top:50px;
+}/* end of the css related to the animation
+
+/*modal title style */
+.modal-header,.col-md-7 h2{
+  background: rgb(9,9,121);
+  background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+  clip-path: polygon(0% 0%, 55% 0, 60% 50%, 55% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 55% 0, 60% 50%, 55% 100%, 0% 100%);
+  transition: all 0.5s;
+  position: relative;
+  border-radius: 0!important;
+}
+.modal-header::after{
+  content: '';
+  position: absolute;
+  background-color: white;
+  width:100%;
+  top:0;
+  bottom:0;
+  left:45%;
+  clip-path: polygon(3% 0, 8% 50%, 3% 100%, 0% 100%, 5% 50%, 0 0);
+  -webkit-clip-path: polygon(3% 0, 8% 50%, 3% 100%, 0% 100%, 5% 50%, 0 0);
+  box-sizing: border-box !important;
+  transition:all 0.5s;
+}
+.modal-header:hover{
+  clip-path: polygon(0% 0%, 75% 0%, 80% 50%, 75% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 75% 0%, 80% 50%, 75% 100%, 0% 100%);
+}
+.modal-header:hover::after{
+  left:65%;
+  clip-path: polygon(2% 0, 7% 50%, 2% 100%, 2% 100%, 7% 50%, 2% 0);
+  -webkit-clip-path: polygon(2% 0, 7% 50%, 2% 100%, 2% 100%, 7% 50%, 2% 0);
+}
+.modal-body p{
+  text-align:justify;
+}
+.modal-header h4{
+  color:white !important;
+}
+.modal-btn, .container-for-footer{
+  background: rgb(9,9,121) !important;
+  background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%) !important;
+  border:0 !important;
+}
+body{
+  background: rgb(240, 242, 245) !important;
+}
+.carousel{
+  transform: translateY(-6px);
+}
+.col-md-7{
+  margin-bottom: 14px !important;
+  background: white;
+  text-align: justify;
+}
+.col-md-7 h2{
+  color:white;
+  transform: translateX(-8px);
+  padding-left: 8px;
+  padding-top:8px;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
