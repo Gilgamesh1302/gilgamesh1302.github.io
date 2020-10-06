@@ -15,26 +15,24 @@
 }
 .nav-link{
   color:white !important;
-  width:100% !important;
+  position: relative;
+  z-index: 2 !important;
 }
-.nav-item{
-  position:relative;
-}
-
-/* nav links hover effects using ::before*/
-.nav-item::before{
-  content: '';
+.nav-link::before{
   position: absolute;
-  width:100%;
-  height:100%;
-  background-color: orange !important;
-  box-sizing: border-box !important;
-  z-index:-1;
-  clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
-  transition: all 0.5s;
+  content: '';
+  background: white;
+  height: 2px;
+  left:0;
+  width: 100%;
+  bottom: 8px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
 }
-.nav-item:hover::before{
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+.nav-link:hover::before{
+  transform: scaleX(1);
+  transform-origin: left;
 }
 .container-fluid.first-one{
   position: relative!important;
@@ -57,6 +55,9 @@
   }
   .col-md-7 h2{
     font-size: 1.5rem !important;
+  }
+  .container-for-footer li a{
+    font-size: 1.1rem !important;
   }
 }
 
@@ -164,4 +165,53 @@ body{
   padding-top:8px;
   padding-bottom: 8px;
   margin-bottom: 16px;
+}
+.container-for-footer ul{
+  text-align: left;
+}
+.container-for-footer li{
+  list-style: none;
+  line-height: 30px;
+}
+.container-for-footer li a{
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+.container-for-footer li a::before{
+  content: '';
+  position: absolute;
+  background: white;
+  height: 2px;
+  left:0;
+  width: 100%;
+  bottom: -2px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+.container-for-footer li a:hover::before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.container-for-footer h4,.container-for-footer h5{
+  text-align: center;
+  color: white;
+}
+.container-for-footer .col a img{
+  transition: all 0.3s;
+}
+.container-for-footer .col a:hover img{
+  opacity: 0.8;
+}
+.container-for-footer i{
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.3s;
+}
+.container-for-footer a:hover .fa-twitter{
+  color: rgb(29, 161, 242);
+}
+.container-for-footer a:hover .fa-facebook-f{
+  color: rgb(15, 146, 243);
 }

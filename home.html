@@ -4,6 +4,7 @@
   <title>bootstrap 1st experience</title>
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Righteous&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="home.css">
   <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css">
@@ -16,10 +17,10 @@
     <!-- navbar collapse -->
     <div class="collapse navbar-collapse align-self-stretch" id="navbarcollapse">
       <ul class="navbar-nav ml-auto h-100">
-        <li class="nav-item d-flex"><a href="#" class="nav-link align-self-center pl-2">Link 1</a></li>
-        <li class="nav-item d-flex"><a href="#" class="nav-link align-self-center pl-2">Link 2</a></li>
-        <li class="nav-item d-flex"><a href="#" class="nav-link align-self-center pl-2">Link 3</a></li>
-        <li class="nav-item d-flex"><a href="#" class="nav-link align-self-center pl-2">Link 4</a></li>
+        <li class="nav-item d-flex"><a href="#" class="nav-link align-self-center ml-2 px-0">Link 1</a></li>
+        <li class="nav-item d-flex"><a href="#" class="nav-link align-self-center ml-2 px-0">Link 2</a></li>
+        <li class="nav-item d-flex"><a href="#" class="nav-link align-self-center ml-2 px-0">Link 3</a></li>
+        <li class="nav-item d-flex"><a href="#" class="nav-link align-self-center mx-2 px-0">Link 4</a></li>
       </ul>
     </div>
   </nav>
@@ -246,7 +247,7 @@
           <img src="image/howtoplay-images/brave-chain.png" class="img-fluid w-100 h-100">
         </div>
         <div class="col-md-6 mb-3">
-          <img src="image/howtoplay-images/np-command-card.png" class="img-fluid">
+          <img src="image/howtoplay-images/np-command-card.png" class="img-fluid w-100">
         </div>
         <div class="col-md-6 mb-3">
           <img src="image/howtoplay-images/servant-skills.png" class="img-fluid w-100 h-100">
@@ -301,10 +302,45 @@
     </div>
   </div>
 </div>
-<div class="container-fluid container-for-footer">
-  <div class="row">
-hello there
+<div class="container-fluid container-for-footer mt-3 shadow pb-2">
+  <div class="row d-flex justify-content-around">
+    <div class="col-md-4 px-2 pt-2 pb-0 order-md-1 order-3">
+      <ul class=" text-center text-md-left p-0 h-100 d-flex flex-column justify-content-between">
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">privacy Policy</a></li>
+        <li><a href="#">FGO English Website</a></li>
+        <li><a href="#">Do Not Sell My Personal Information</a></li>
+      </ul>
+    </div>
+    <div class="col-md-3 py-2 order-md-2 order-1">
+      <h4 class="text-center text-md-left">Fate/Grand Order<h4>
+      <h5 class="text-center text-md-left">Now Available On IOS and Android :</h5>
+      <div class="row">
+        <div class="col">
+          <a href="#"><img src="image/apple-download.png" class="img-fluid"></a>
+        </div>
+        <div class="col">
+          <a href="#"><img src="image/android-download.png" class="img-fluid"></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 py-2 order-2 order-md-3 pl-0">
+      <h4 class="text-center text-md-left">FGO Other Projects :</h4>
+      <div class="row">
+        <div class="col-md-6 px-0 mx-2 mx-md-0">
+          <a href="#"><img src="image/fgo-vr.jpg" class="img-fluid"></a>
+        </div>
+        <div class="col-md-6 mx-2 mx-md-0">
+          <a href="#"><img src="image/fgo-anime.png"  class="img-fluid w-100 h-100"></a>
+        </div>
+      </div>
+    </div>
   </div>
+  <div class="w-100 text-center">
+      <a href="#"><i class="fab fa-facebook-f p-3"></i></a>
+      <a href="#"><i class="fab fa-twitter p-3"></i></a>
+  </div>
+  <div><p class="text-center m-0" style="color:white">&copy;TYPE-MOON/FGO PROJECT<br><span style="font-size:0.8rem">&copy;Copyright 2017 Aniplex Inc.</span></p></div>
 </div>
 <!--scripts for bootstrap -->
 <script src="bootstrap-4.5.2-dist/js/jquery-3.5.1.min.js"></script>
