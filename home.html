@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="home.css">
   <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css">
+  <link rel="icon" href="image/favicon.ico" type="image/vnd.microsoft.icon">
 </head>
 <body>
 <!-- navigation bar -->
@@ -24,7 +25,7 @@
       </ul>
     </div>
   </nav>
-<!--Introduction To Servants-->
+<!--Introduction To Servants: this part is for the container reserved for servants right after the navbar-->
 <div class="container-fluid first-one shadow">
   <div class="row" >
     <div class="col-md p-0 col-6 coloffirstrow">
@@ -100,7 +101,7 @@
     </div>
   </div>
 </div>
-<!-- modals related to learn more... buttons -->
+<!-- modals related to learn more... buttons: Modals that cobtains more informations about each Servants -->
 <div class="modal fade" id="sabermodal">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
     <div class="modal-content border border-0 p-0 m-0">
@@ -217,8 +218,10 @@
     </div>
   </div>
 </div>
+<!-- the Main body of the website -->
 <div class="container-fluid mt-3">
   <div class="row d-felx justify-content-around">
+    <!-- this column contains information about the game and how to play it-->
     <div class="col-md-7 shadow mx-2 rounded-sm px-2 py-3">
       <h1 style="text-align:center">Fate/Grand Order</h1>
       <p>Fate/Grand Order is an online, free-to-play Japanese mobile game, developed by Delightworks using Unity,and published by Aniplex. The game is based on Type-Moon's Fate/stay night franchise, and was released in Japan on July 29, 2015 for Android,and on August 12, 2015, for iOS. English iOS and Android versions followed on June 25, 2017 in the United States and Canada,and a Korean version was released on November 21, 2017.An arcade version titled Fate/Grand Order Arcade was released by Sega in Japan on 26 July 2018.</p>
@@ -263,9 +266,10 @@
         </div>
       </div>
     </div>
+    <!-- this column contains the divs for the carousel , news and SEnd feedback-->
     <div class="col-md-4 mx-2 m-0 p-0">
       <!--carousel for events-->
-      <div class="w-100 carousel slide mb-3" id="events-carousel" data-ride="carousel">
+      <div class="w-100 carousel slide" id="events-carousel" data-ride="carousel" style="margin-bottom:8px">
         <!-- the slideshow -->
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -296,15 +300,64 @@
         </a>
 
       </div>
-      <div class="rounded-sm shadow p-1 w-100" style="background:white">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <!-- this div is for news -->
+      <div class="rounded-sm shadow p-2 w-100 news mb-3" style="background:white">
+        <h2>News</h2>
+        <div class="w-100 border-bottom pb-2">
+          <p class="mb-0">10.6.2020 <span class="ml-3 p-1 px-4" style="color:white;background:purple">News</span><br>
+            <span class="d-block mt-2">
+              <a href="#" style="text-decoration:none;color:black">Advance Notice: "The Land of Mystique, Oniland! The Great Oni and the Kamuy"...</a>
+            </span>
+          </p>
+        </div>
+        <div class="w-100 border-bottom py-2">
+          <p class="mb-0">10.6.2020 <span class="ml-3 p-1 px-4" style="color:white;background:purple">News</span><br>
+            <span class="d-block mt-2">
+              <a href="#" style="text-decoration:none;color:black">[Updated - New Info] [Event] Revival: Halloween Strike! Demonic Climb - Himej...</a>
+            </span>
+          </p>
+        </div>
+        <div class="w-100 border-bottom py-2">
+          <p class="mb-0">10.6.2020 <span class="ml-3 p-1 px-4" style="color:white;background:purple">Updates</span><br>
+            <span class="d-block mt-2">
+              <a href="#" style="text-decoration:none;color:black">Game Update Completion Notice (10-06 21:00 PDT)</a>
+            </span>
+          </p>
+        </div>
+        <div class="w-100 py-2">
+          <p class="mb-0">10.5.2020 <span class="ml-3 p-1 px-4" style="color:white;background:purple">News</span><br>
+            <span class="d-block mt-2">
+              <a href="#" style="text-decoration:none;color:black">[Ongoing] [Campaign] Main Quest AP Costs 1/4 & 1/2 Campaign</a>
+            </span>
+          </p>
+        </div>
+        <div class="w-100 d-flex justify-content-center py-2">
+          <button type="button" class="btn px-5" style="color:white;background:purple">More</button>
+        </div>
+      </div>
+      <!-- this div is for sending feedbacks -->
+      <div class="feedback rounded-sm p-2 w-100 shadow" style="background:white">
+        <h2 class="mb-3">Send Feedback</h2>
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Full Name">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="E-mail Address">
+            </div>
+            <div class="form-group">
+              <textarea type="text" rows="5" class="form-control" placeholder="Message"></textarea>
+            </div>
+              <button type="submit" class="btn w-100" style="background:purple;color:white">Submit</button>
+        </form>
       </div>
     </div>
   </div>
 </div>
+<!-- footer -->
 <div class="container-fluid container-for-footer mt-3 shadow pb-2">
   <div class="row d-flex justify-content-around">
-    <div class="col-md-4 px-2 pt-2 pb-0 order-md-1 order-3">
+    <div class="col-md-3 px-2 pt-2 pb-0 order-md-1 order-3">
       <ul class=" text-center text-md-left p-0 h-100 d-flex flex-column justify-content-between">
         <li><a href="#">Contact Us</a></li>
         <li><a href="#">privacy Policy</a></li>
@@ -312,9 +365,9 @@
         <li><a href="#">Do Not Sell My Personal Information</a></li>
       </ul>
     </div>
-    <div class="col-md-3 py-2 order-md-2 order-1">
-      <h4 class="text-center text-md-left">Fate/Grand Order<h4>
-      <h5 class="text-center text-md-left">Now Available On IOS and Android :</h5>
+    <div class="col-md-4 py-2 order-md-2 order-1 d-flex flex-column justify-content-between">
+        <h4 class="text-center text-md-left">Fate/Grand Order<h4>
+        <h5 class="text-center text-md-left">Now Available On IOS and Android:</h5>
       <div class="row">
         <div class="col">
           <a href="#"><img src="image/apple-download.png" class="img-fluid"></a>
@@ -324,8 +377,9 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4 py-2 order-2 order-md-3 pl-0">
+    <div class="col-md-4 py-2 order-2 order-md-3 pl-0 d-flex flex-column justify-content-between">
       <h4 class="text-center text-md-left">FGO Other Projects :</h4>
+      <h5 class="text-center text-md-left">Discover Other FGO Projects :</h5>
       <div class="row">
         <div class="col-md-6 px-0 mx-2 mx-md-0">
           <a href="#"><img src="image/fgo-vr.jpg" class="img-fluid"></a>
@@ -340,7 +394,11 @@
       <a href="#"><i class="fab fa-facebook-f p-3"></i></a>
       <a href="#"><i class="fab fa-twitter p-3"></i></a>
   </div>
-  <div><p class="text-center m-0" style="color:white">&copy;TYPE-MOON/FGO PROJECT<br><span style="font-size:0.8rem">&copy;Copyright 2017 Aniplex Inc.</span></p></div>
+  <div>
+    <p class="text-center m-0" style="color:white">&copy;TYPE-MOON/FGO PROJECT<br>
+      <span style="font-size:0.8rem">Created By El Kadiri Mohamed.</span>
+    </p>
+  </div>
 </div>
 <!--scripts for bootstrap -->
 <script src="bootstrap-4.5.2-dist/js/jquery-3.5.1.min.js"></script>
