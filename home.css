@@ -237,3 +237,36 @@ h2{
 .container-for-footer a:hover .fa-facebook-f{
   color: rgb(15, 146, 243);
 }
+.form-group{
+  position: relative;
+}
+.form-group span{
+  position: absolute;
+  top:8px;
+  left: 12px;
+  color: rgb(153, 153, 153);
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.form-control:hover+span{
+  color: rgb(126,126,126);
+}
+.form-control{
+  background-color: rgb(237,237,237)!important;
+  border-color: rgb(237,237,237)!important;
+}
+.form-control:hover{
+  background-color: rgb(231,231,231)!important;
+  border-color: rgb(231,231,231)!important;
+}
+.form-control:focus{
+  border: 2px solid black !important;
+  box-shadow: 0 0 0 0 !important;
+  background-color: white !important;
+}
+.form-control:focus+span{
+  left:0;
+  top:-20px;
+  font-size: 0.8rem;
+  color: black;
+}

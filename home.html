@@ -337,16 +337,19 @@
       </div>
       <!-- this div is for sending feedbacks -->
       <div class="feedback rounded-sm p-2 w-100 shadow" style="background:white">
-        <h2 class="mb-3">Send Feedback</h2>
+        <h2 class="mb-4">Send Feedback</h2>
           <form>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Full Name">
+            <div class="form-group mb-4">
+              <input type="text" class="form-control shadow-sm">
+              <span>Full Name</span>
+            </div>
+            <div class="form-group mb-4">
+              <input type="email" class="form-control shadow-sm">
+              <span class="disabled">E-mail Address</span>
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" placeholder="E-mail Address">
-            </div>
-            <div class="form-group">
-              <textarea type="text" rows="5" class="form-control" placeholder="Message"></textarea>
+              <textarea type="text" rows="5" class="form-control shadow-sm"></textarea>
+              <span>Message</span>
             </div>
               <button type="submit" class="btn w-100" style="background:purple;color:white">Submit</button>
         </form>
