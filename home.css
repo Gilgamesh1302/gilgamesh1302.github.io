@@ -264,7 +264,7 @@ h2{
   box-shadow: 0 0 0 0 !important;
   background-color: white !important;
 }
-.form-control:focus+span{
+.form-control:focus+span,.form-control:valid+span{
   left:0;
   top:-20px;
   font-size: 0.8rem;
